@@ -1,0 +1,65 @@
+1.Инкапсулиция - это организация кода таким обрзом, что его удобно изменять, читать и редактировать. Все собрано в одном месте.
+2. Плюсы объектов:
+		-на этапе выполнения можно заменить один объект на другой
+		-сокращают кол-во кода
+   Минусы объектов
+   		-неудобно задавать свойства для каждого объекта
+   		-не могут работать без задания соотвествующих параметров.
+3.
+	сlass Машина{
+		public static $weight = 1500;
+		publuc static $power;
+		public function publicMethod(){
+			echo self::$power;
+		}
+
+	}   				
+
+	&OpelAstra = new Машинв();
+	$BMW_X6 = new Машина();
+
+	Class TV{
+		public static &height;
+		public static &width;
+		public static &display;
+		public function publicMethod(){
+			echo self::$height;
+		}
+	}
+
+	&Samsung = new TV();
+	&Sony = new TV();
+
+	Class pen(){
+		public static $color;
+		public static $type;
+		public function publicMethod(){
+			echo self::$type;
+		}
+	}
+
+	&parker = new pen();
+	&pilot = new pen();
+
+	Class Duck{
+		public static $color;
+		public static $Weight;
+		public function publicMethod(){
+			echo self::$color;
+		}
+	}
+
+	$domestic_duck = new Duck();
+	$True_duck = new Duck();
+	$white_duck = new Duck();
+
+	Class goods{
+		public static $price;
+		public static $brand;
+		public function publicMethod(){
+			echo self::$price;
+		}
+	}
+
+	$ipad = new goods();
+	&bred = new goods();
